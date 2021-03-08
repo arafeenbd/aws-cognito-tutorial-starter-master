@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FormErrors from "../FormErrors";
-import Validate from "../utility/FormValidation";
+// import Validate from "../utility/FormValidation";
 
 import {Auth} from "aws-amplify";
 
@@ -42,7 +42,7 @@ class LogIn extends Component {
       console.log(user);
       this.props.auth.setAuthStatus(true);
       this.props.auth.setUser(user);
-      
+
       this.props.history.push("/");
       
     } catch(error) {
